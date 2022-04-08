@@ -128,6 +128,7 @@ void move_right(Map &map)
 				{
 					map.maxGrid[i]->number = 0;
 					map.maxGrid[k]->number *= 2;
+					i = k;
 				}
 			}
 		}
@@ -294,6 +295,7 @@ void move_down(Map &map)
 				{
 					map.maxGrid[i]->number = 0;
 					map.maxGrid[k]->number *= 2;
+					i = k;
 				}
 			}
 		}
